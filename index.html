@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Baby ❤️</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<!-- MUSIC -->
+<audio id="music" loop preload="auto">
+    <source src="./song.mp3" type="audio/mpeg">
+</audio>
+
+<div id="floatingHearts"></div>
+
+
+<!-- START -->
+<section id="startScreen" class="screen active">
+
+    <div class="glow glow1"></div>
+    <div class="glow glow2"></div>
+
+    <div class="start-content">
+
+        <div class="stars">✦　♡　✦</div>
+
+        <div class="start-heart">♡</div>
+
+        <h1>Happy Birthday</h1>
+
+        <h2>Baby</h2>
+
+        <p>
+            I made something special<br>
+            just for you ❤️
+        </p>
+
+        <button id="startButton" class="main-button">
+            Open My Heart ♡
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- BIRTHDAY -->
+<section id="scene1" class="screen">
+
+    <div class="glow glow1"></div>
+
+    <div class="scene-content">
+
+        <div class="small-label">
+            Today is your special day
+        </div>
+
+        <h1 class="heading">
+            Happy Birthday,<br>
+            <span>Baby ❤️</span>
+        </h1>
+
+        <div class="cake">
+
+            <div class="flame">🔥</div>
+
+            <div class="candle"></div>
+
+            <div class="cake-top">
+                <div class="cream"></div>
+            </div>
+
+            <div class="cake-body">
+                <span>♡</span>
+                <span>♡</span>
+                <span>♡</span>
+            </div>
+
+        </div>
+
+        <p class="description">
+            Another beautiful year of you ✨
+        </p>
+
+        <button id="birthdayNext" class="main-button">
+            Let's celebrate ♡
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- BALLOONS -->
+<section id="scene2" class="screen">
+
+    <div class="glow glow2"></div>
+
+    <div class="scene-content">
+
+        <div class="small-label">
+            A little surprise for you
+        </div>
+
+        <h1 class="heading">
+            Pop all 4 balloons 🎈
+        </h1>
+
+        <p class="description">
+            Tap each balloon
+        </p>
+
+        <div class="balloon-area">
+
+            <div class="balloon balloon1" data-balloon>♡</div>
+            <div class="balloon balloon2" data-balloon>♡</div>
+            <div class="balloon balloon3" data-balloon>♡</div>
+            <div class="balloon balloon4" data-balloon>♡</div>
+
+        </div>
+
+        <div id="balloonMessage" class="typing-message"></div>
+
+        <div id="balloonContinue" class="hidden">
+
+            <button id="balloonNext" class="main-button">
+                Continue 🌹
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ROSE -->
+<section id="scene3" class="screen">
+
+    <div class="scene-content">
+
+        <div class="small-label">
+            Something beautiful for you
+        </div>
+
+        <h1 class="heading">
+            Your Rose Bouquet 🌹
+        </h1>
+
+        <div class="bouquet">
+
+            <div class="rose r1">🌹</div>
+            <div class="rose r2">🌹</div>
+            <div class="rose r3">🌹</div>
+            <div class="rose r4">🌹</div>
+            <div class="rose r5">🌹</div>
+            <div class="rose r6">🌹</div>
+            <div class="rose r7">🌹</div>
+
+            <div class="bouquet-paper"></div>
+
+            <div class="ribbon">♡</div>
+
+        </div>
+
+        <p class="description">
+            A little love, wrapped just for you ❤️
+        </p>
+
+        <button id="roseNext" class="main-button">
+            Some memories ✨
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- PHOTOS -->
+<section id="scene4" class="screen">
+
+    <div class="scene-content">
+
+        <div class="small-label">
+            Our little memories
+        </div>
+
+        <h1 class="heading">
+            Some Sweet Moments ❤️
+        </h1>
+
+        <div class="photo-frame">
+
+            <div class="memory-photo active">
+                <img src="./photos/photo1.jpg" alt="Memory 1">
+            </div>
+
+            <div class="memory-photo">
+                <img src="./photos/photo2.jpg" alt="Memory 2">
+            </div>
+
+            <div class="memory-photo">
+                <img src="./photos/photo3.jpg" alt="Memory 3">
+            </div>
+
+        </div>
+
+        <div class="photo-dots">
+            <span class="photo-dot active"></span>
+            <span class="photo-dot"></span>
+            <span class="photo-dot"></span>
+        </div>
+
+        <p class="memory-text">
+            Three pictures,<br>
+            a thousand feelings. ❤️
+        </p>
+
+        <button id="memoryNext" class="main-button">
+            A Message From My Heart 💌
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- LETTER -->
+<section id="scene5" class="screen">
+
+    <div class="scene-content letter-content">
+
+        <div class="small-label">
+            From my heart to yours
+        </div>
+
+        <h1 class="letter-heading">
+            A Message From My Heart
+        </h1>
+
+        <div class="letter-paper">
+
+            <div class="letter-decoration">♡</div>
+
+            <p id="letter1" class="letter-dear"></p>
+            <p id="letter2"></p>
+            <p id="letter3"></p>
+            <p id="letter4"></p>
+            <p id="letter5"></p>
+            <p id="letter6"></p>
+            <p id="letter7"></p>
+            <p id="letter8" class="signature"></p>
+
+        </div>
+
+        <button id="letterNext" class="main-button hidden">
+            One Last Wish ✨
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- WISH -->
+<section id="scene6" class="screen">
+
+    <div id="wishIntro" class="wish-intro">
+
+        <div class="wish-star">✦</div>
+
+        <p id="wishTyping"></p>
+
+        <div class="wish-heart">♡</div>
+
+    </div>
+
+
+    <div id="wishContent" class="scene-content wish-content hidden">
+
+        <div class="small-label">
+            This wish is only for you
+        </div>
+
+        <h1 class="heading">
+            Blow the candle,<br>
+            <span>Baby ❤️</span>
+        </h1>
+
+        <p class="wish-subtitle">
+            Close your eyes<br>
+            and make a wish ✨
+        </p>
+
+        <div class="big-cake">
+
+            <div id="bigFlame" class="big-flame">
+                🔥
+            </div>
+
+            <div class="big-candle"></div>
+
+            <div class="big-cake-top">
+                <div class="big-cream"></div>
+            </div>
+
+            <div class="big-cake-body">
+                <span>♡</span>
+                <span>♡</span>
+                <span>♡</span>
+            </div>
+
+        </div>
+
+        <button id="blowButton" class="main-button">
+            Blow the candle 💨
+        </button>
+
+        <p id="wishMessage" class="wish-message"></p>
+
+    </div>
+
+</section>
+
+
+<!-- FINAL -->
+<section id="scene7" class="screen final-screen">
+
+    <div class="final-glow"></div>
+
+    <div class="final-content">
+
+        <div class="bear">🧸</div>
+
+        <div class="final-small">
+            And finally...
+        </div>
+
+        <h1>
+            Lots of love<br>
+            <span>for you ❤️</span>
+        </h1>
+
+        <p class="final-birthday">
+            Happy Birthday, Baby.
+        </p>
+
+        <p class="final-message">
+            No matter where life takes us,
+            I hope you always remember
+            how special you are to me.
+        </p>
+
+        <div class="final-heart">
+            ❤️
+        </div>
+
+        <button id="replayButton" class="replay-button">
+            ↻ Replay
+        </button>
+
+    </div>
+
+</section>
+
+
+<script src="./script.js"></script>
+
+</body>
+</html>
